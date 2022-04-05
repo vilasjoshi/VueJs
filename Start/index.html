@@ -13,7 +13,9 @@
 
         <div v-if = "isVisible"> This is conditional rendering</div>
 
+        <div v-show = "isShow"> This is v-show demo.</div>
 
+        <button v-on:click ="isVisible = !isVisible">Show Box</button>
 
     </div>
 
@@ -24,7 +26,8 @@
             data: function(){
                 return {
                     greeting : "Hello Vue3 JS !",
-                    isVisible : true
+                    isVisible : true,
+                    isShow : false
                 }
 
             }
